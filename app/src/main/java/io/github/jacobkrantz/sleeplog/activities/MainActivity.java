@@ -1,7 +1,9 @@
-package io.github.jacobkrantz.sleeplog;
+package io.github.jacobkrantz.sleeplog.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import io.github.jacobkrantz.sleeplog.R;
 
 public class MainActivity extends AppCompatActivity {
 
