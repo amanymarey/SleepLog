@@ -9,9 +9,12 @@ import android.widget.Toast;
 import io.github.jacobkrantz.sleeplog.R;
 
 public class MainActivity extends AppCompatActivity {
-
+    //private boolean switchOnOff;
+    private int counter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //switchOnOff = false;
+        counter = 0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -19,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
         enterDataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Hello!", Toast.LENGTH_SHORT).show();
+                if (counter == 3){
+                    Toast.makeText(MainActivity.this, "Hello!", Toast.LENGTH_SHORT).show();
+                }
+                counter+=1;
             }
         });
 
